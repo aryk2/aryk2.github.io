@@ -36,6 +36,12 @@ h1, h2, h3, h4, p, label {
     padding-left: 20px;
 }
 
+@media only screen and (max-width: 414px) {
+    .nav-bar {
+      flex-wrap: wrap;
+    }
+}
+
 
 .nav-item > a {
     font-size: 18px;
@@ -45,7 +51,11 @@ h1, h2, h3, h4, p, label {
 }
 
 .nav-item > a:hover {
-    color: pink;
+    color: #ff8fe5;
+ }
+
+ .active > a {
+    color: #ff8fe5;
  }
 
  /* Home Section Styles */
@@ -128,4 +138,17 @@ hr {
 
 .btn {
     margin-top: 15px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .form-element {
+        flex-direction: column; 
+    }
+    .contact-label {
+        width: 100%
+    }
+    
+    .contact-field {
+        width: 100%
+    }
 }

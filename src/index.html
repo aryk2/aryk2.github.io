@@ -6,14 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aryeh Kempler-DeLugach Final Project</title>
         <link rel="stylesheet" href="./styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script defer src="functions.js"></script>
     </head>
     <body>
 
         <ul class="nav-bar">
-            <li class="nav-item"><a href="#top">Home</a></li>
-            <li class="nav-item"><a href="#projects">Projects</a></li>
-            <li class="nav-item"><a href="#experience">Experience</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#top" onclick="setActiveSection($)">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" onclick="setActiveSection($)">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience" onclick="setActiveSection($)">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" onclick="setActiveSection($)">Contact</a></li>
         </ul>
 
         <div id="about" class="about">
@@ -130,7 +132,7 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact-form-container">
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
                     <div class="form-element">
                         <label for="name" class="contact-label">Name:   </label>
                         <input type="text" id="name" name="name" class="contact-field" required>
@@ -144,7 +146,7 @@
                         <textarea type="text" id="body" name="body" class="contact-field message" required ></textarea>
                       </div>
     
-                      <input type="submit" value="Submit" class="btn">
+                      <input type="submit" value="Submit" class="btn" id="submit-button">
                 </form>
             </div>
         </div>
