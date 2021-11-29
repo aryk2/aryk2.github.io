@@ -26,5 +26,3 @@ const setActiveSection = ($) => {
 
 
 jQuery(document).ready(setActiveSection($));
-
-

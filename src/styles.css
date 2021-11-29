@@ -26,6 +26,7 @@ h1, h2, h3, h4, p, label {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .nav-item {
@@ -42,6 +43,11 @@ h1, h2, h3, h4, p, label {
     }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .nav-item > a {
     font-size: 18px;
@@ -59,17 +65,22 @@ h1, h2, h3, h4, p, label {
  }
 
  /* Home Section Styles */
- .about-text {
+.about {
+    padding-top: 60px;
+}
+
+.about-text {
     text-align: center;
- }
+}
 
   /* Projects Section Styles */
 
-  .projects {
+.projects {
+    padding-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
+}
 
   .project-section {
       border: 1px solid grey;
@@ -93,6 +104,7 @@ h1, h2, h3, h4, p, label {
     display: flex;
     align-items: center;
     flex-direction: column; 
+    padding-top: 60px;
 }
 
 .company {
@@ -104,6 +116,11 @@ hr {
 }
 
 /* Contact Section Styles */
+
+.contact {
+    padding-top: 60px;
+
+}
 
 .contact-form-container {
     display: flex;
