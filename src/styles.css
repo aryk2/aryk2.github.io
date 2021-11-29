@@ -124,16 +124,17 @@ hr {
 .form-element {
     display: flex;
     flex-direction: row; 
+    flex-wrap: wrap;
     width: 100%;
     margin: 5px;
 }
 
 .contact-label {
-    width: 40%
+    width: 20%
 }
 
 .contact-field {
-    width: 40%
+    width: 78%
 }
 
 .btn {
